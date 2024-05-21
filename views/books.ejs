@@ -1,0 +1,21 @@
+<%- include('./partial/_header.ejs') %>
+    <main>
+
+        <form action="/books" method="post">
+            <div>
+                <label for="titlle">Title</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div>
+                <label for="volumes">Volumes</label>
+                <input type="text" name="volumes" id="volumes">
+            </div>
+            <div>
+                <label for="status">Status</label>
+                <input type="text" name="status" id="status">
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </main>
+
+    <%- include('./partial/_footer.ejs') %>
